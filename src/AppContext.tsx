@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 
 interface IAppContext {
-	siteTitle: string
+	message: string
 }
 
 interface IAppProvider {
@@ -11,12 +11,12 @@ interface IAppProvider {
 export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
-	const [siteTitle] = useState("Info Site 888");
+	const [message] = useState("Info Site 888");
 
 	return (
 		<AppContext.Provider
 			value={{
-				siteTitle
+				message
 			}}
 		>
 			{children}

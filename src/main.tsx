@@ -6,6 +6,7 @@ import { PageWelcome } from "./pages/PageWelcome.tsx";
 import { PageInfo } from "./pages/PageInfo.tsx";
 import { PageAbout } from "./pages/PageAbout.tsx";
 import { Page404 } from "./pages/Page404.tsx";
+import { AppProvider } from "./AppContext.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -34,5 +35,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-	<RouterProvider router={router} />
+	<AppProvider>
+		<RouterProvider router={router} />
+	</AppProvider>
 );
