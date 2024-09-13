@@ -13,6 +13,7 @@
 - Tailwind
 - ESLint
 - Prettier
+- responsive mobile menu (test: https://vite-react-menu-createbrowserrouter-context.vercel.app)
 
 ## setup
 
