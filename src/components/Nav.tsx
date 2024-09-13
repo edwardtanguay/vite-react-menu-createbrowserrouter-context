@@ -35,7 +35,7 @@ export const Nav = () => {
 		<>
 			{currentMenuItem && (
 				<nav>
-					<div className="md:hidden bg-slate-500 px-4 py-2 content">
+					<div className="md:hidden bg-slate-500 text-[1.2rem] px-4 py-2 content">
 						<div className="flex justify-between">
 							<p><NavLink to={currentMenuItem.idCode}>{currentMenuItem.title}</NavLink></p>
 							<p className="mt-1 cursor-pointer" onClick={handleMenuToggle}><GiHamburgerMenu /></p>
@@ -46,7 +46,10 @@ export const Nav = () => {
 									return (
 										<>
 											{(menuItem.idCode !== currentMenuItem.idCode && (
-												<div key={index}><NavLink to={menuItem.idCode} onClick={() => setShowMobileMenu(false)}>{menuItem.title}</NavLink></div>
+												<div key={index}
+												className="mt-[.2rem]"	
+												><NavLink to={menuItem.idCode}
+													onClick={() => setShowMobileMenu(false)}>{menuItem.title}</NavLink></div>
 											))}
 										</>
 									)
