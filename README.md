@@ -20,7 +20,7 @@
 - `npm i`
 - `npm run dev`
 
-## if you want this site without useContext implemented
+## if you want this site without useContext
 
 - [React Router 6.4 with createBrowserRouter](https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter)
 
