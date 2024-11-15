@@ -23,3 +23,7 @@
 ## if you want this site without useContext implemented
 
 - [React Router 6.4 with createBrowserRouter](https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter)
+
+## if you want this site with easy-peasy Redux
+
+- [Vite-React Site with React Router 6.4 createBrowserRouter + easy-peasy Redux](https://github.com/edwardtanguay/vite-react-menu-createbrowserrouter-easypeasy)
